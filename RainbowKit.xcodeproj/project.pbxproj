@@ -29,6 +29,8 @@
 		17F4734C1B141D2E006F63BC /* RBBlockActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F4734B1B141D2E006F63BC /* RBBlockActionSheet.m */; };
 		17F4734F1B141DF9006F63BC /* UITextField+PlaceholderAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F4734E1B141DF9006F63BC /* UITextField+PlaceholderAddition.m */; };
 		2D71EC6822B1C077CCA49CB9 /* libPods-RainbowKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77D9B38B7D4AD562CD7B7B2F /* libPods-RainbowKit.a */; };
+		C00F85FC1BB258DA0024D130 /* RBBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C00F85F91BB258DA0024D130 /* RBBorderView.m */; };
+		C00F85FD1BB258DA0024D130 /* UIView+RBAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = C00F85FB1BB258DA0024D130 /* UIView+RBAddition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,10 @@
 		17F4734E1B141DF9006F63BC /* UITextField+PlaceholderAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+PlaceholderAddition.m"; sourceTree = "<group>"; };
 		274AB49602A55D14C68356D9 /* Pods-RainbowKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainbowKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RainbowKit/Pods-RainbowKit.debug.xcconfig"; sourceTree = "<group>"; };
 		77D9B38B7D4AD562CD7B7B2F /* libPods-RainbowKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RainbowKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C00F85F81BB258DA0024D130 /* RBBorderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBBorderView.h; sourceTree = "<group>"; };
+		C00F85F91BB258DA0024D130 /* RBBorderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBBorderView.m; sourceTree = "<group>"; };
+		C00F85FA1BB258DA0024D130 /* UIView+RBAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RBAddition.h"; sourceTree = "<group>"; };
+		C00F85FB1BB258DA0024D130 /* UIView+RBAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RBAddition.m"; sourceTree = "<group>"; };
 		E6BAB4749B1D41FED59264DE /* Pods-RainbowKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainbowKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-RainbowKit/Pods-RainbowKit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -178,6 +184,10 @@
 		17F4731E1B141938006F63BC /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				C00F85F81BB258DA0024D130 /* RBBorderView.h */,
+				C00F85F91BB258DA0024D130 /* RBBorderView.m */,
+				C00F85FA1BB258DA0024D130 /* UIView+RBAddition.h */,
+				C00F85FB1BB258DA0024D130 /* UIView+RBAddition.m */,
 				17F4734D1B141DF9006F63BC /* UITextField+PlaceholderAddition.h */,
 				17F4734E1B141DF9006F63BC /* UITextField+PlaceholderAddition.m */,
 				17F473321B141B85006F63BC /* RBGlobal.h */,
@@ -410,6 +420,8 @@
 				17F473341B141B86006F63BC /* RBGlobal.m in Sources */,
 				17F473231B14195C006F63BC /* NSArray+RBAddition.m in Sources */,
 				17F4734C1B141D2E006F63BC /* RBBlockActionSheet.m in Sources */,
+				C00F85FC1BB258DA0024D130 /* RBBorderView.m in Sources */,
+				C00F85FD1BB258DA0024D130 /* UIView+RBAddition.m in Sources */,
 				17F4733B1B141BD1006F63BC /* RBButton.m in Sources */,
 				17F473311B141B2E006F63BC /* RBNoticeHelper.m in Sources */,
 				17F4734F1B141DF9006F63BC /* UITextField+PlaceholderAddition.m in Sources */,

@@ -188,4 +188,36 @@
     UIImage *cuttedImage = [self rb_cutImageWithRect:cutFrame];
     return cuttedImage;
 }
+
+- (UIImage *)rb_geometricScalingToSize:(CGSize)size {
+    if (self.size.width <= size.width) {
+        return self;
+    }
+    CGFloat changeScale = size.width / size.height;
+    CGFloat originScale = self.size.width / size.height;
+    CGSize newImageSize = CGSizeZero;
+    if (originScale > changeScale) {
+        // 原图的宽:高 大于 输出尺寸的宽:高，按照宽度来缩放
+        newImageSize.width = size.width;
+        newImageSize.height = self.size.height * size.width / self.size.width;
+    } else {
+        // 原图的宽:高 小于 输出尺寸的宽:高，按照高度来缩放
+        newImageSize.height = size.height;
+        newImageSize.width = self.size.width * size.height / self.size.height;
+    }
+    
+    UIImage *sizedImage = [self rb_scaleImageToSize:newImageSize];
+    
+    UIGraphicsBeginImageContext(size);
+    
+    [[UIColor blackColor] setFill];
+    [[UIBezierPath bezierPathWithRect:CGRectMake(0, 0, size.width, size.height)] fill];
+    
+    CGRect rect = CGRectMake((size.width - sizedImage.size.width) / 2, (size.height - sizedImage.size.height) / 2, sizedImage.size.width, sizedImage.size.height);
+    [sizedImage drawInRect:rect blendMode:kCGBlendModeNormal alpha:1.0];
+    
+    UIImage *resultImage =  UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return resultImage;
+}
 @end

@@ -17,4 +17,5 @@
 + (NSData *)rb_smallTheImageBackData:(UIImage *)image;
 + (UIImage *)rb_imageFromView:(UIView*)view;
 - (UIImage *)rb_cutImageWithViewSize:(CGSize)viewSize;
+- (UIImage *)rb_geometricScalingToSize:(CGSize)size;
 @end

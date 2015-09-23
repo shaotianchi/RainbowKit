@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface NSString (MatchAddition)
-- (BOOL)matchEmail;
-- (BOOL)matchTel;
+- (BOOL)rb_isMatchEmail;
+- (BOOL)rb_isMatchTel;
+- (BOOL)rb_isMatchTelLength;
 @end

@@ -10,4 +10,7 @@
 
 @interface NSArray (RBAddition)
 - (NSArray *)rb_map:(id(^)(id object))mapBlock;
+- (NSArray *)rb_filte:(BOOL (^)(id))filterBlock;
+- (NSString *)rb_mergerString;
+- (NSString *)rb_mergerStringWithSymbol:(NSString *)symbol;
 @end
