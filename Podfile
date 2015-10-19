@@ -3,6 +3,7 @@
 
 target 'RainbowKit' do
 pod 'AFNetworking', '~> 2.5.4'
+pod 'Masonry'
 end
 
 target 'RainbowKitTests' do

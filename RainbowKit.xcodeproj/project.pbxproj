@@ -291,6 +291,7 @@
 				17F472F21B141923006F63BC /* Frameworks */,
 				17F472F31B141923006F63BC /* Resources */,
 				C996C0B4C4B4C500E60A165C /* Copy Pods Resources */,
+				02C415F83B8C9ACB9FD93CBC /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -377,6 +378,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		02C415F83B8C9ACB9FD93CBC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RainbowKit/Pods-RainbowKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		63EBD47A97E2977EA017685F /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

@@ -49,7 +49,7 @@
     }
     
     if (viewControlelr.navigationController && !viewControlelr.navigationController.navigationBarHidden /*&& [viewControlelr respondsToSelector:@selector(edgesForExtendedLayout)] && viewControlelr.edgesForExtendedLayout == UIRectEdgeNone*/) {
-        [self showNoticeAtView:showingView y:64 - CGRectGetMinY(showingView.frame) msg:msg];
+        [self showNoticeAtView:showingView y:0 msg:msg];
     } else {
         [self showNoticeAtView:showingView y:20 msg:msg];
     }
